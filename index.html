@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Little Valentine Game</title>
+<title>A Little Game</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap');
@@ -51,7 +51,7 @@ body {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
@@ -61,7 +61,7 @@ p {
   margin-bottom: 25px;
 }
 
-button {
+button, a.link-btn {
   background: linear-gradient(135deg, #ff4d6d, #ff758f);
   border: none;
   border-radius: 30px;
@@ -70,11 +70,13 @@ button {
   color: white;
   cursor: pointer;
   margin: 6px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+  text-decoration: none;
   box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-button:hover {
+button:hover, a.link-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.3);
 }
@@ -92,7 +94,6 @@ button:hover {
 
 <body>
 
-<!-- Floating hearts -->
 <script>
 for (let i = 0; i < 20; i++) {
   const heart = document.createElement("div");
@@ -110,52 +111,44 @@ for (let i = 0; i < 20; i++) {
   <!-- Screen 1 -->
   <div id="screen1">
     <div class="rose">🌹</div>
-    <h1>A Small Game for You</h1>
-    <p>
-      This isn’t a long game.<br>
-      Just a few moments, made with care.
-    </p>
+    <h1>A little game for you bubu</h1>
+    <p>Click when you're ready.</p>
     <button onclick="next(1)">Start</button>
   </div>
 
   <!-- Screen 2 -->
   <div id="screen2" class="hidden">
-    <h1>First Question</h1>
-    <p>
-      What do you think matters more?
-    </p>
-    <button onclick="next(2)">Looks</button>
-    <button onclick="next(2)">Feelings</button>
+    <h1>Who do you love the most?</h1>
+    <button onclick="next(2)">Your cutu</button>
+    <button onclick="next(2)">Your bubu</button>
+    <button onclick="next(2)">Your Ritam</button>
   </div>
 
   <!-- Screen 3 -->
   <div id="screen3" class="hidden">
-    <h1>Second Question</h1>
-    <p>
-      Pick one thing you like more.
-    </p>
-    <button onclick="next(3)">Late night talks</button>
-    <button onclick="next(3)">Small moments</button>
+    <h1>What's Sunday in French?</h1>
+    <button onclick="next(3)">Dimanche</button>
+    <button onclick="next(3)">Sonpapdiday</button>
+    <button onclick="next(3)">Ravivar</button>
   </div>
 
   <!-- Screen 4 -->
   <div id="screen4" class="hidden">
-    <h1>Almost There</h1>
-    <p>
-      One last thing before I say what I really want to say.
-    </p>
-    <button onclick="next(4)">Continue</button>
+    <h1>If we were allowed to date, would you?</h1>
+    <button onclick="next(4)">yesh</button>
+    <button onclick="next(4)">yesh and</button>
+    <button onclick="next(4)">yesh</button>
   </div>
 
   <!-- Final Screen -->
   <div id="final" class="hidden">
     <div class="rose">❤🌹❤</div>
-    <h1>My Question</h1>
+    <h1>That was thee gamee</h1>
     <p>
-      I made this because words matter more when they’re intentional.<br><br>
-      So here it is, honestly and simply:
+      but there's more,<br>
+      click heree and then yk what to do muah
     </p>
-    <h1>Will you be mine?</h1>
+    <a class="link-btn" href="https://skribbl.io/" target="_blank">Click me</a>
   </div>
 
 </div>
